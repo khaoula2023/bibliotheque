@@ -18,5 +18,12 @@ Route::get('/', function () {
     return view('welcome');
 });
 
+Route::get(' acceuil', function () {
+    return view('acceuil');
+});
+
+Route::get('admin ', function () {
+    return view('dashbord');
+});
 
 
