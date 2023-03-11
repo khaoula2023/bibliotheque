@@ -23,6 +23,8 @@
          <span class="navbar-toggler-icon"></span>
         
         </button>
+
+          </nav>
             <div class="collapse navbar-collapse" id="mainmenu"> 
                 <ul class="navbar-nav ms-auto">
                     <h3 li class="nav-item"><a href="#intro" class="nav-link">Home</a></li></h3>

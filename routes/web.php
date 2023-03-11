@@ -23,7 +23,7 @@ Route::get(' acceuil', function () {
 });
 
 Route::get('admin ', function () {
-    return view('dashbord');
+    return view('admin_home');
 });
 
 
