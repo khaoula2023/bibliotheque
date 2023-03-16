@@ -13,22 +13,18 @@ return new class extends Migration
      */
     public function up()
     {
-    
+        
         Schema::create('Livre', function (Blueprint $table) {
             $table->id();
             $table->integer('code livre')->unique();
             $table->integer('code interne')->unique();
-            $table->integer('code externe')->unique();
+            $table->integer('ISBN')->unique();
             $table->string('titre');
-            $table->string('titre parallele');
             $table->string('Auteur');
-            $table->string('classification');
             $table->string('classement');
-            $table->string('categorie');
-            $table->string('langue');
-            $table->string('maison d edition');
+            $table->string('classification');
+            $table->string(' edition');
             $table->string('nombre de pages');
-            $table->string('Statut');
             $table->timestamps();
         });
     }

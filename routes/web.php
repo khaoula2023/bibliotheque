@@ -30,6 +30,11 @@ Route::get('admin ', function () {
 });
 
 
+Route::get('employes ', function () {
+    return view('employes');
+});
+
+
 
 Auth::routes();
 

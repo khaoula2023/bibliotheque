@@ -32,12 +32,8 @@
             <th>Code interne</th>
             <th>code externe</th>
             <th>titre</th>
-            <th>titre parallele </th>
             <th>auteur</th>
-            <th>classification</th>
-            <th>classement</th>
             <th>categorie</th>
-            <th>langue</th>
             <th>maison d'edition</th>
             <th>Nombre de pages</th>
             <th width="280px">Action</th>
