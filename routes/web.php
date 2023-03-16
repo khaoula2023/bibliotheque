@@ -34,6 +34,10 @@ Route::get('employes ', function () {
     return view('employes');
 });
 
+Route::get('auteur', function () {
+    return view('auteur');
+});
+
 
 
 Auth::routes();

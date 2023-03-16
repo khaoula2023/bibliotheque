@@ -12,7 +12,7 @@
             </a>
                
           <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="auteur" class="nav-link">
               <i class="nav-icon fas fa-user"></i>
               <p>
                 Auteur
@@ -20,7 +20,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="" class="nav-link">
+            <a href="employes" class="nav-link">
               <i class="nav-icon fas fa-users"></i>
               <p>
                 employes
