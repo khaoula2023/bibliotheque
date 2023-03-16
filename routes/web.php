@@ -22,6 +22,9 @@ Route::get(' acceuil', function () {
     return view('acceuil');
 });
 
+Route::get(' books', function () {
+    return view('books');
+});
 Route::get('admin ', function () {
     return view('admin_home');
 });
