@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\LivresController;
 use App\Http\Controllers\PagesController;
 use Illuminate\Support\Facades\Route;
 
@@ -39,7 +40,4 @@ Route::get('auteur', function () {
 });
 
 
-
-Auth::routes();
-
-Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+Route::resource('/Livres', LivresController::class);

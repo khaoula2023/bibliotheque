@@ -43,20 +43,44 @@
         </tr>
         
         </thead>
+
+        @foreach ($livre as $livres)
+
+        
+
+
         <tr>
+            <td>{{ $livres->id }} </td>
+            <td>{{ $livres->Code_interne }}</td>
+            <td>{{ $livres->Code_externe }}</td>
+            <td>{{ $livres->ISBN }}</td>
+            <td>{{ $livres->Titre }}</td>
+            <td>{{ $livres->Auteur }}</td>
+            <td>{{ $livres->Classement }}</td>
+            <td>{{ $livres->Classification }}</td>
+            <td>{{ $livres->Nom_edition }}</td>
+            <td>{{ $livres->Lieu_edition }}</td>
+            <td>{{ $livres->Date_edition }}</td>
+            <td>{{ $livres->Nombre_de_pages }}</td>
             <td>
-            <a class="btn btn-info" href=""> <i class="fa fa-eye"> Consulter</i></a>
+                <form action="{{ route('Livres.destroy',$livres->id) }}" method="POST">
+                    <a class="btn btn-info" href=""> <i class="fa fa-eye"></i></a>
     
-            <a class="btn btn-primary" href=""> <i class="fa fa-edit"> Modifier</i></a>
-            <button type="submit" class="btn btn-danger"> <i class="fa fa-trash"> Supprimer</i> </button>
+                    <a class="btn btn-primary" href=""> <i class="fa fa-edit"></i></a>
+
+                    <button type="submit" class="btn btn-danger"> <i class="fa fa-trash"></i> </button>
+                </form>
 
             </td>
         </tr>
+        @endforeach
     </table>
 
     </div>
               <!-- /.card-body -->
             </div>
 
+
+    {!! $livre->links() !!}
       
 @endsection

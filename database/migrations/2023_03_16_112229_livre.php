@@ -14,17 +14,19 @@ return new class extends Migration
     public function up()
     {
         
-        Schema::create('Livre', function (Blueprint $table) {
+        Schema::create('Livres', function (Blueprint $table) {
             $table->id();
-            $table->integer('code livre')->unique();
-            $table->integer('code interne')->unique();
+            $table->integer('Code_interne')->unique();
+            $table->integer('Code_externe')->unique();
             $table->integer('ISBN')->unique();
-            $table->string('titre');
+            $table->string('Titre');
             $table->string('Auteur');
-            $table->string('classement');
-            $table->string('classification');
-            $table->string(' edition');
-            $table->string('nombre de pages');
+            $table->string('Classement');
+            $table->string('Classification');
+            $table->string('Nom_edition');
+            $table->string('Lieu_edition');
+            $table->date('Date_edition');
+            $table->integer('Nombre_de_pages');
             $table->timestamps();
         });
     }
@@ -35,6 +37,6 @@ return new class extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('Livre');
+        Schema::dropIfExists('Livres');
     }
 };
