@@ -1,16 +1,15 @@
 @extends('admin_layouts.app')
 
 @section('content')
-     
 
 
-    <div class="row">
+<div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Edit Books</h2>
+                <h2>Edit employes</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('Books.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('Employe.index') }}"> Back</a>
             </div>
         </div>
     </div>
@@ -26,7 +25,7 @@
         </div>
     @endif
   
-    <form action="{{ route('Books.update','$Books->id') }}" method="POST">
+    <form action="{{ route('Employes.update','$Employes->id') }}" method="POST">
         @csrf
         @method('PUT')
    
@@ -34,21 +33,21 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Id:</strong>
-                    <input type="id" name="id" value="{{ $Books->id }}" class="form-control" placeholder="id">
+                    <input type="id" name="id" value="{{ $Employes->id }}" class="form-control" placeholder="id">
                 </div>
             </div>
          <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Categories_id:</strong>
-                    <input type="id" name="categories_id" value="{{ $Books->categories_id }}" class="form-control" placeholder="Categories_id">
+                    <input type="id" name="categories_id" value="{{ $Employes->categories_id }}" class="form-control" placeholder="Categories_id">
                 </div>
             </div>
          <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Description:</strong>
-                    <input type="text" name="description" value="{{ $Books->description }}" class="form-control" placeholder="description">
+                    <input type="text" name="description" value="{{ $Employes->description }}" class="form-control" placeholder="description">
                 </div>
             </div>
          <div class="row">
@@ -72,6 +71,6 @@
    
     </form>    
 
-
+ 
 
 @endsection

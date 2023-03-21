@@ -41,3 +41,5 @@ Route::get('auteur', function () {
 
 
 Route::resource('/Livres', LivresController::class);
+Route::resource('/Employes', EmployesController::class);
+Route::resource('/Abonnes', AbonnesController::class);

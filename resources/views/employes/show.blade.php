@@ -7,10 +7,10 @@
     <div class="row">
         <div class="col-lg-12 margin-tb">
             <div class="pull-left">
-                <h2>Edit Books</h2>
+                <h2>show Employesfresh</h2>
             </div>
             <div class="pull-right">
-                <a class="btn btn-primary" href="{{ route('Books.index') }}"> Back</a>
+                <a class="btn btn-primary" href="{{ route('Employes.index') }}"> Back</a>
             </div>
         </div>
     </div>
@@ -26,7 +26,7 @@
         </div>
     @endif
   
-    <form action="{{ route('Books.update','$Books->id') }}" method="POST">
+    <form action="{{ route('Employe.show','$Employes->id') }}" method="POST">
         @csrf
         @method('PUT')
    
@@ -34,7 +34,7 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Id:</strong>
-                    <input type="id" name="id" value="{{ $Books->id }}" class="form-control" placeholder="id">
+                    <input type="id" name="id" value="{{ $Employe->id }}" class="form-control" placeholder="id">
                 </div>
             </div>
          <div class="row">
@@ -48,21 +48,21 @@
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Description:</strong>
-                    <input type="text" name="description" value="{{ $Books->description }}" class="form-control" placeholder="description">
+                    <input type="text" name="description" value="{{ $Employes->description }}" class="form-control" placeholder="description">
                 </div>
             </div>
          <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>titre:</strong>
-                    <input type="date" name="titre" value="{{ $Books->titre }}" class="form-control" placeholder="titre">
+                    <input type="date" name="titre" value="{{ $Employes->titre }}" class="form-control" placeholder="titre">
                 </div>
             </div>
          <div class="row">
             <div class="col-xs-12 col-sm-12 col-md-12">
                 <div class="form-group">
                     <strong>Price:</strong>
-                    <input type="float" name="price" value="{{ $Books->price }}" class="form-control" placeholder="Price">
+                    <input type="float" name="price" value="{{ $Employes->price }}" class="form-control" placeholder="Price">
                 </div>
             
             <div class="col-xs-12 col-sm-12 col-md-12 text-center">
@@ -72,6 +72,6 @@
    
     </form>    
 
-
+ 
 
 @endsection
